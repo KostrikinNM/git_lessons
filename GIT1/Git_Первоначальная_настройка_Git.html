@@ -1,0 +1,347 @@
+<!DOCTYPE html> <html class="js fontface no-webkit no-chrome windows no-ie8" style lang=en><!--
+ Page saved with SingleFile 
+ url: https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git 
+ saved date: Sat Feb 29 2020 08:50:36 GMT+0300 (Москва, стандартное время)
+--><meta charset=utf-8>
+<meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible>
+<title>Git - Первоначальная настройка Git</title>
+<style media=screen>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}aside,footer,header,nav{display:block}a{background-color:transparent}a:active,a:hover{outline:0}img{border:0}hr{-moz-box-sizing:content-box;box-sizing:content-box}code{font-size:1em}input{font:inherit;margin:0}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}body{padding:0;margin:0;font-family:"adelle",Georgia,"Times New Roman",serif;font-size:14px;line-height:22px;color:#4e443c;background:#f0efe7 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABSAFIDAREAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAQIAAwn/xAAuEAABAwIFBAAFBAMAAAAAAAABABEhAjESQVFhcSIygcFCUpGhsQPR4fAzYqL/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQIE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9u6nNVLP48w65G0jDyKWfSbIKqIpcmWuyDMIZy0IMRcMQdQWZ9EC3c4cxKCcVLgD+UBSxkCM+EFFndnBEeUCA8tfbRBPXrvYdqDSCS8O1vwgKu4btKBfE2bERldBZeGPUJbXVAXFmm+yDG42gBBJcUmoFrtTzdA0EEA5kkSgpy7iQYbdAQweQ/4QZj8hu/hASQzNYgoJqJFmIaUGFLdW6CnAD7dIkygaTzmC90BcE/KHH7ICqQzAvBKCqelqGJCAJu1hkdUGljkRD86oJY/69rXVFsbgRlS6gzwCDL57oJNy3jIboFmpFLM3lBJqYibXKCwQXFgQUGAagNbJt0GDE6AFBjLj77oDEQQwjJAvTtf7IF2IA2xHbZBLd27ElAdWkAv9Sgpy7H6IA4SGIBeG5QAMvMONkF5MLk2AQSCTafYsgbAgw0htUBV3ObsenJA4afmFsSAFJBpl8LMEC0X2O6AEAjS/CBY91nF+EBWMUgR8QQSCR8UCAONUFkW8zyg0AwZMgoMSzVWDdVOZQS3aTLSwhBmOh7Xyt+6DGoBzoJGXAQJlqhJjEcm2CBJhgxIuRZAEZZG+yDAMwd6TCDMQaSRYv4QIOQPPCCSLXbXTlAB5AEF2CBImDc2GaBx06INUMQByhj4QYvhcAaUga6oJYgAAsKWIO26CiQ3Jt90FVGIFpDoCp4FiHxIJcG0NdtkFVGz2p7igzmQSzW/oQTSGfPPEgpx/y3nRBvhFTNkDkgGvoczvdBn6RVM5evKAwl5vqgXiZe1O8IMCSeLZoBjQJEif4QYg6W9j2gzQ5koGkAh4IAkBBT/j+nlAOXoN48Nog0MBickSEGEUyYHdH4QYWvAMOgzYnYQNsroIxRGQt7KDoeqXdrndBJJILBnEDhBptqJQLACQ4zIQGE+kAe4Wt8N7oKH+MdvceL5qh05yt/dUAe0X7clBAvXfxdA6+uEFfp+e3L0go+0EU9wtb2qDKq2VreVBX170H//Z)}.inner{position:relative;width:940px;margin:0 auto;overflow:visible}.inner:before{display:table;content:""}.inner:after{display:table;clear:both;content:""}aside{float:left;width:218px;margin-bottom:35px}#content{float:right;width:702px}#main{padding:22px;margin-bottom:35px;background-color:#fcfcfa;border:solid 1px #e2e0d8;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}header{position:relative;padding-bottom:26px;margin-top:14px}header #tagline{position:absolute;top:11px;left:120px;display:block;margin-top:1px;font-size:24px;line-height:24px;color:#9a9994}aside nav ul{margin-bottom:1.4em;margin-left:0;font-size:16px;font-weight:bold;list-style:none}aside nav ul li{margin-bottom:0.5em}aside nav ul li a{color:#413932}aside nav ul li a.active,aside nav ul li a:hover{color:#f14e32}aside nav ul li ul{margin-top:0.3em;margin-left:20px;font-size:13px;font-weight:normal}aside nav ul li ul li{margin-bottom:0}aside nav ul li ul li a.active{font-weight:bold}aside nav ul li ul.expanded{display:block}#book-chapters{position:relative;background-color:rgba(223,221,213,0.33);-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;padding:8px 12px 6px;margin-bottom:10px;font-size:13px;font-weight:bold}#book-chapters .light{font-weight:normal}#book-chapters a{font-weight:bold;position:relative}.section-nav-container .dropdown-panel .three-column:before,#reference-version .dropdown-panel .three-column:before,#book-chapters .dropdown-panel .three-column:before{display:table;content:""}.section-nav-container .dropdown-panel .three-column:after,#reference-version .dropdown-panel .three-column:after,#book-chapters .dropdown-panel .three-column:after{display:table;clear:both;content:""}a.dropdown-trigger{padding:4px 5px;border:solid 1px transparent}footer{padding:20px 0 40px;margin-top:35px;clear:both;font-size:12px;line-height:15.4px;color:#9a9994;border-top:solid 1px #d8d7cf}footer:before{display:table;content:""}footer:after{display:table;clear:both;content:""}footer a{color:#403f3c}footer a:hover{color:#0b0b0a}footer .site-source{float:left;padding-left:46px;background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAXCAQAAADNEvUtAAABQElEQVR4Aa2U2W6DMBBFjw0JJJQkkNKszVIixPL//1fJGtmy5FJacR5nuTB3NGYyipyMmagYGFgzC40R2zIDqZHqif7TuicGHAcj9gSgmP5/ESd6Bq6AozZiJfAmsgm/UtAySKNjKbEFkEhFzweaH1lRS9OLDHC8m2gNhgW3YJ0l5iIFLXsUPk+TqXDkNFJ/8Zei2NPaVBz4UG9yKeDQHCXesnPDvUSoZkWI0mSbUWMeLAH5p46CMIhDBxz+VJ0oJPAU7RsLQmi60UNyk21AUSHaAethK76o8bVRIiQ8rG8pPlcTPyME13YmxmMnqZ4j2rVINMcns9Z/hdcW2Z9ubHMuBmhvuKsdrmCEzNpZAXBi8O/UnRMnIsZBUdEz8Bl+xeyhp0xkSUkMrIOv2JacvyOv2J1ZuMtjNAsbOh5oJvINZhIiALK/lTkAAAAASUVORK5CYII=) 0 2px no-repeat;background-size:38px 23px}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1){footer .site-source{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAuCAQAAAAoojfxAAACWklEQVR4AeWYeU/jMBBHX9z0vigNPelF25Dj+3+/lRZRWf0R3GG7VbT7/F8Y2xM8Zh7hfyJmyYkdfWpFxJHy9yjoUSNGlJexoUa8eokdqA0RmZfYgtowoPRGn9qw9NLKiHgQESFSL7G1zPwrxKwpyEmopkvpjSEfOF4pyEjun15EQn7ZsEcVMy+tHMcH88uzI937FvSJ0hsJVfhxWz7Z489e4rgDLTaUV2NQGetHPfHJ4mp+yog/wjEjl7TmVJF4UQUNPmmwl1W2NPkhI1JZ7o0u1Ry8yD0+8Ex2tVbOlAgjbXaS1DuTwK31o6f6czb6onQsB7iguFqgYEGD75n4MyoOakiqK+MIwxPv8l572oTxf8dH02unDPmWDgdKmTTmFpy/HS+Bfd5knw0xX9JgKcEFMxy3MfZnBisnYir3PeMZQe9MyY7WDy3szC002cqeB79oWhwl4MzwIRY2Qi/DHAeAnHfOC9HDLMyhJXQiBuRh8+EW1pUzWwGc7bUlvKuFmRhRUF73jZ42C6M5qYVZaEmXufhLjH+n7OY0Vwu7Ecf8yy4TcaEvR6rmZLOwMGNUEw50qrO3mVMbtbAwHfaoJowtTUnNKWhhgnaZovrvl2I3J7WwMJMvu0wbxWhOBgsTumj7PhtE22BOlRYmxKwo0S7jqMZgTgOThfk2kanqBKrXaE4rs4XFqCacGGAnYE5Do4UtLZfJgJhTYrAw/Yd3TYwFgzn1jBY286qwx91xLMhImZgtLGJFzpnnf/xbmNXCaoJaWG1IxMJqwrSu3/NjcvliVhP6nETv7sYv12OITOGQrXYAAAAASUVORK5CYII=) 0 2px no-repeat;background-size:38px 23px}}footer .sfc-member{float:right;text-align:right}p{margin:0 0 11px}a{color:#0388a6;text-decoration:none;transition-duration:0.3s;transition-property:color}h1,h2,h3{margin:0;font-weight:normal;color:#4e443c;text-rendering:optimizelegibility}h1{margin-bottom:0.4em;font-size:36px;line-height:44px}h2{margin-top:20px;font-size:18px;font-weight:bold;line-height:44px;color:#f14e32}h3{line-height:33px;font-size:16px;font-weight:bold}ul,ol{padding:0;margin:0 0 11px 25px}ol{list-style:decimal}li{line-height:22px}hr{margin:22px 0;border-top:1px solid #d8d7cf}code{-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;margin-bottom:1em;overflow:auto;line-height:18px;background-color:#fff}.light{color:#9a9994}.highlight{background-color:#eee0b5;padding:2px}hr.sidebar{width:218px;height:12px;margin-bottom:2em;border:0!important;background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAAAMCAMAAAAzpFPbAAAACVBMVEUAAADa2dLp6OCo4MoAAAAAAXRSTlMAQObYZgAAADVJREFUSMft1LEJAAAQwsDo/kP/EN8FG/uAHEkA40JblIu3DXFbvG3xfjJWRTohJ+SEnJDPPTGgCca2pM1VAAAAAElFTkSuQmCC) top right no-repeat;background-size:218px 12px}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1){hr.sidebar{background:transparent url(data:image/png;base64,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) top right no-repeat;background-size:218px 12px}}aside.sidebar{font-size:13px!important;line-height:16.5px}aside.sidebar p{font-size:13px!important;line-height:16.5px}input:-moz-placeholder{color:#9a9994!important}input{font-family:"adelle",Georgia,"Times New Roman",serif;font-size:14px;outline:none}form#search{position:absolute;top:10px;right:0;z-index:1000;width:262px;padding-left:32px;background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAA80lEQVR4AWNABktmT9RdOKNv3cyJ7T+A7P8zJ3Z8WTSzfzlInAEnQGhmA+K6BdP7/gNpDAwVrwZiZnyGTEPXOHtyJzYDJ+AywAZNYS8Qi0LlJIB4Mpq8GYYhED8jDCDkUpB6DAXgQET4mx+HIUJAzWBDZk3qeIlNAVgSZBi+wIeFEYjGkARFI0gSapMQLpcAMdwlhMJkMg5D5iCpWYBNgS5a+pgJxNJQOTko/z+Saw1wRXMdWCEmJimtMINSJNBFlBiE8BooXOZO6b4wb1rP/zmTu66DwgMq3k6cQYTzWBe1DOpFM6iFQoMQiY9cg1qgUT4BAIBVdgeeWtbxAAAAAElFTkSuQmCC) 10px 50% no-repeat;background-size:17px 17px;background-color:#fcfcfa!important;border:solid 1px #ceccc5;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:20px;-webkit-box-shadow:inset 0 1px 4px #ddd;-moz-box-shadow:inset 0 1px 4px #ddd;box-shadow:inset 0 1px 4px #ddd}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2/1){form#search{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAABvklEQVR4Ae3UAwhYXxSA8T9m27btMNvImK0wpJlhtm3btm1bYfZ29uV6dbqat1e/fE7f0/3HdM2dMrI4BmIXHuAD3uMetqE38v8TfqkBVXAQYmk7ynzNgPiYDvHwGSMQOzQiBQ5DAm1HIt+IeMqr8LUNMX1CZkAM7mMfDuIJxGCoa0Qlw3tfgMKRmf9QDmshivfI6RJyQFn0Co0t5lvjnbJjiW1EUe1JoInDzbRX9nxCJpsFA5UFizy+s+3Krq42wzuV4eIeITX112MefgCJeOB5BMTGG0jEaZvh95CI/QGH4lVIxB3joPK1HwwIuQCJuGkzeB8S8Rj/ekTEVV7NMZvhbZAolPUIqa/smmMz3FcZXu0Y8S/2K7va2SwoAFE0cwjpoR3zSKWMWZ8l79DSMuKjsmOBy2Mth88QxUZUwP+RM6M29kEUn5HL9UMbAzF4jpO4hDcQC1Pwr+upuA0SLjwmMXb+LDGxMRyfII4+B8UoQSWxwbgc+IgVyI8JEA0mG2OUoOzojpU4j8e4hzOYj85IFznYgmPCL3PM35iJv1JMT23+e8fc1ae/b8wbffL7xiwNWhwQ0xP38AxLkfwLevaPG4w9Zv0AAAAASUVORK5CYII=) 10px 50% no-repeat;background-size:17px 17px}}form#search input{-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:20px;width:100%;height:20px;margin-top:5px;margin-bottom:1px;line-height:1em;color:#4e443c;background-color:transparent;border:0}#documentation #main p em{font-family:Courier,monospace!important;font-style:normal;font-weight:bold;color:#4e443c}#documentation #main .admonitionblock table{margin-bottom:1em}#documentation #main .admonitionblock table td{padding:0 1em}#documentation #main .admonitionblock table td .title{font-weight:bold;color:#f14e32}#documentation #main .admonitionblock table td:first-child{border-right:solid 2px #d8d7cf}.book code{display:inline}.book pre code{overflow:auto}td{padding:5px}.book table.ref th:nth-child(1),td:nth-child(1){width:25%;padding:5px}.edition2 *{box-sizing:border-box}.edition2 p{font-family:sans-serif;font-size:14px;line-height:22px;text-indent:0}.edition2 p a{display:inline}.edition2 ol{margin:15px 0 15px 40px}.edition2 ol li,.edition2 ol li p{margin-top:5px;font-family:sans-serif;font-size:1em;line-height:120%;text-indent:0}.edition2 table{margin-top:30px;border-collapse:collapse;border-bottom:1px solid #888}.edition2 tr{border-width:0px}.edition2 td,.edition2 table p{font-family:sans-serif;font-size:12px;line-height:120%}.edition2 table p{margin-top:6px;text-indent:0}.edition2 td code{word-wrap:break-word;white-space:pre-wrap}.edition2 pre,.edition2 code{font-family:monospace}.edition2 pre{background:#eee}.edition2 pre code{display:inline;background:#eee;border:0}.edition2 pre{margin:10px 0;overflow-x:auto;font-size:0.9em;line-height:120%;color:#333}.edition2 code{padding:0;color:#333;background:#eee;border:1px solid #f5f5f5}.edition2 table pre{text-indent:0}.edition2 table code{font-size:inherit;line-height:inherit}pre{border:solid 1px #efeee6;border-radius:3px;display:block;margin-bottom:1em;overflow:auto}</style>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+<link href="data:image/vnd.microsoft.icon;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAChP+1MmS/DRJkvx0ShP/FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="shortcut icon" type=image/x-icon><style>.sf-hidden{display:none!important}</style><link rel=canonical href=https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git></head>
+<body id=documentation>
+ <div class=inner>
+ <header>
+ <a href=https://git-scm.com/><img src=data:image/png;base64,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 alt=Git width=110 height=46></a>
+ <span id=tagline>--distributed-is-the-new-centralized</span>
+ 
+ <form id=search action=/search/results>
+ <input id=search-text name=search placeholder="Search entire site..." autocomplete=off type=text value>
+ </form>
+ <div id=search-results class=sf-hidden></div>
+</header>
+ </div> 
+ <div class=inner>
+ <div id=content-wrapper>
+ <aside class=sidebar>
+ <nav>
+ <ul>
+ <li>
+ <a href=https://git-scm.com/about>About</a>
+ <ul class=sf-hidden>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a class=active href=https://git-scm.com/doc>Documentation</a>
+ <ul class=expanded>
+ <li>
+ <a href=https://git-scm.com/docs>Reference</a>
+ </li>
+ <li>
+ <a class=active href=https://git-scm.com/book>Book</a>
+ </li>
+ <li>
+ <a href=https://git-scm.com/videos>Videos</a>
+ </li>
+ <li>
+ <a href=https://git-scm.com/doc/ext>External Links</a>
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a href=https://git-scm.com/downloads>Downloads</a>
+ <ul class=sf-hidden>
+ <li>
+ 
+ </li>
+ <li>
+ 
+ </li>
+ </ul>
+ </li>
+ <li>
+ <a href=https://git-scm.com/community>Community</a>
+ </li>
+ </ul>
+ <hr class=sidebar>
+ <p>
+This book is available in
+ <a href=https://git-scm.com/book/en>English</a>.
+</p>
+<p>
+ Full translation available in
+ <table>
+ <tbody><tr><td><a href=https://git-scm.com/book/bg>български език</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/es>Español</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/fr>Français</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/gr>Ελληνικά</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/ja>日本語</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/ko>한국어</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/nl>Nederlands</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/ru>Русский</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/sl>Slovenščina</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/tl>Tagalog</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/uk>Українська</a></tr>
+ <tr><td><a href=https://git-scm.com/book/zh>简体中文</a>,</tr>
+ </table>
+<p></p>
+<p>
+ Partial translations available in
+ <table>
+ <tbody><tr><td><a href=https://git-scm.com/book/cs>Čeština</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/de>Deutsch</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/mk>Македонски</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/pl>Polski</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/sr>Српски</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/uz>Ўзбекча</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/zh-tw>繁體中文</a>,</tr>
+ </table>
+<p></p>
+<p>
+ Translations started for
+ <table>
+ <tbody><tr><td><a href=https://git-scm.com/book/az>azərbaycan dili</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/be>Беларуская</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/fa dir=rtl>فارسی</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/id>Indonesian</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/it>Italiano</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/ms>Bahasa Melayu</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/pt-br>Português (Brasil)</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/pt-pt>Português (Portugal)</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/sv>Svenska</a>,</tr>
+ <tr><td><a href=https://git-scm.com/book/tr>Türkçe</a>.</tr>
+ </table>
+<p></p>
+<hr class=sidebar>
+<p>
+The source of this book is <a href=https://github.com/progit/progit2-ru>hosted on GitHub.</a><br>
+Patches, suggestions and comments are welcome.
+</p>
+ </nav>
+</aside>
+ <div id=content>
+ 
+<div id=book-chapters>
+ <a class=dropdown-trigger id=book-chapters-trigger data-panel-id=chapters-dropdown href=#>Chapters ▾</a>
+<div class="dropdown-panel sf-hidden" id=chapters-dropdown>
+ <div class=three-column>
+ 
+ 
+ 
+ </div>
+ </div>
+ <span class=light id=edition>
+ 2nd Edition
+ </span>
+</div>
+<div id=main class="book edition2">
+ <h1>1.6 Введение - Первоначальная настройка Git</h1>
+ <div>
+<h2 id=r_first_time>Первоначальная настройка Git</h2>
+<div class=paragraph>
+<p>Теперь, когда Git установлен в вашей системе, самое время настроить среду для работы с Git под себя.
+Это нужно сделать только один раз — при обновлении версии Git настройки сохранятся.
+Но, при необходимости, вы можете поменять их в любой момент, выполнив те же команды снова.</p>
+</div>
+<div class=paragraph>
+<p>В состав Git входит утилита <code>git config</code>, которая позволяет просматривать и настраивать параметры, контролирующие все аспекты работы Git, а также его внешний вид.
+Эти параметры могут быть сохранены в трёх местах:</p>
+</div>
+<div class="olist arabic">
+<ol class=arabic>
+<li>
+<p>Файл <code>/etc/gitconfig</code> содержит значения, общие для всех пользователей системы и для всех их репозиториев.
+Если при запуске <code>git config</code> указать параметр <code>--system</code>, то параметры будут читаться и сохраняться именно в этот файл.</p>
+</li>
+<li>
+<p>Файл <code>~/.gitconfig</code> или <code>~/.config/git/config</code> хранит настройки конкретного пользователя.
+Этот файл используется при указании параметра <code>--global</code>.</p>
+</li>
+<li>
+<p>Файл <code>config</code> в каталоге Git (т.е. <code>.git/config</code>) репозитория, который вы используете в данный момент, хранит настройки конкретного репозитория.</p>
+</li>
+</ol>
+</div>
+<div class=paragraph>
+<p>Настройки на каждом следующем уровне подменяют настройки из предыдущих уровней, то есть значения в <code>.git/config</code> перекрывают соответствующие значения в <code>/etc/gitconfig</code>.</p>
+</div>
+<div class=paragraph>
+<p>В системах семейства Windows Git ищет файл <code>.gitconfig</code> в каталоге <code>$HOME</code> (<code>C:\Users\$USER</code> для большинства пользователей).
+Кроме того, Git ищет файл <code>/etc/gitconfig</code>, но уже относительно корневого каталога MSys, который находится там, куда вы решили установить Git при запуске инсталлятора.</p>
+</div>
+<div class=paragraph>
+<p>Если вы используете Git для Windows версии 2.х или новее, то так же обрабатывается файл конфигурации уровня системы, который имеет путь <code>C:\Documents and Settings\All Users\Application Data\Git\config</code> в Windows XP или <code>C:\ProgramData\Git\config</code> в Windows Vista и новее.
+Этот файл может быть изменён только командой <code>git config -f &lt;file&gt;</code>, запущенной с правами администратора.</p>
+</div>
+<div class=paragraph>
+<p>Чтобы посмотреть все установленные настройки и узнать где именно они заданы, используйте команду:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --list --show-origin</code></pre>
+</div>
+</div>
+<div class=sect3>
+<h3 id=_имя_пользователя>Имя пользователя</h3>
+<div class=paragraph>
+<p>Первое, что вам следует сделать после установки Git — указать ваше имя и адрес электронной почты.
+Это важно, потому что каждый коммит в Git содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com</code></pre>
+</div>
+</div>
+<div class=paragraph>
+<p>Опять же, если указана опция <code>--global</code>, то эти настройки достаточно сделать только один раз, поскольку в этом случае Git будет использовать эти данные для всего, что вы делаете в этой системе.
+Если для каких-то отдельных проектов вы хотите указать другое имя или электронную почту, можно выполнить эту же команду без параметра <code>--global</code> в каталоге с нужным проектом.</p>
+</div>
+<div class=paragraph>
+<p>Многие GUI-инструменты предлагают сделать это при первом запуске.</p>
+</div>
+</div>
+<div class=sect3>
+<h3 id=r_editor>Выбор редактора</h3>
+<div class=paragraph>
+<p>Теперь, когда вы указали своё имя, самое время выбрать текстовый редактор, который будет использоваться, если будет нужно набрать сообщение в Git.
+По умолчанию Git использует стандартный редактор вашей системы, которым обычно является Vim.
+Если вы хотите использовать другой текстовый редактор, например, Emacs, можно проделать следующее:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --global core.editor emacs</code></pre>
+</div>
+</div>
+<div class=paragraph>
+<p>В системе Windows следует указывать полный путь к исполняемому файлу при установке другого текстового редактора по умолчанию.
+Пути могут отличаться в зависимости от того, как работает инсталлятор.</p>
+</div>
+<div class=paragraph>
+<p>В случае с Notepad++, популярным редактором, скорее всего вы захотите установить 32-битную версию, так как 64-битная версия ещё не поддерживает все плагины.
+Если у вас 32-битная Windows или 64-битный редактор с 64-битной системой, то выполните следующее:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class=icon>
+<div class=title>Note</div>
+</td>
+<td class=content>
+<div class=paragraph>
+<p>Vim, Emacs и Notepad++ — популярные текстовые редакторы, которые часто используются разработчиками как в Unix-подобных системах, таких как Linux и Mac, так и в Windows.
+Если вы используете другой редактор или его 32-битную версию, то обратитесь к разделу <a href=https://git-scm.com/book/ru/v2/ch00/r_core_editor>Команды git config core.editor</a> за дополнительными инструкциями как использовать его совместно с Git.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class=icon>
+<div class=title>Warning</div>
+</td>
+<td class=content>
+<div class=paragraph>
+<p>В случае, если вы не установили свой редактор и не знакомы с Vim или Emacs, вы можете попасть в затруднительное положение, когда какой-либо из них будет запущен.
+Например, в Windows может произойти преждевременное прерывание команды Git при попытке вызова редактора.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class=sect3>
+<h3 id=_проверка_настроек>Проверка настроек</h3>
+<div class=paragraph>
+<p>Если вы хотите проверить используемую конфигурацию, можете использовать команду <code>git config --list</code>, чтобы показать все настройки, которые Git найдёт:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --list
+user.name=John Doe
+user.email=johndoe@example.com
+color.status=auto
+color.branch=auto
+color.interactive=auto
+color.diff=auto
+...</code></pre>
+</div>
+</div>
+<div class=paragraph>
+<p>Некоторые ключи (названия) настроек могут отображаться несколько раз, потому что Git читает настройки из разных файлов (например, из <code>/etc/gitconfig</code> и <code>~/.gitconfig</code>).
+В таком случае Git использует последнее значение для каждого ключа.</p>
+</div>
+<div class=paragraph>
+<p>Также вы можете проверить значение конкретного ключа, выполнив <code>git config &lt;key&gt;</code>:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config user.name
+John Doe</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class=icon>
+<div class=title>Note</div>
+</td>
+<td class=content>
+<div class=paragraph>
+<p>Так как Git читает значение настроек из нескольких файлов, возможна ситуация когда Git использует не то значение что вы ожидали.
+В таком случае вы можете спросить Git об <em>origin</em> этого значения. Git выведет имя файла, из которого значение для настройки было взято последним:</p>
+</div>
+<div class=listingblock>
+<div class=content>
+<pre class=highlight><code class=language-console data-lang=console>$ git config --show-origin rerere.autoUpdate
+file:/home/johndoe/.gitconfig	false</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id=nav><a href=https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git>prev</a> | <a href=https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F>next</a></div></div>
+</div>
+ </div>
+ </div>
+ <footer>
+ <div class=site-source>
+ <a href=https://git-scm.com/site>About this site</a><br>
+ Patches, suggestions, and comments are welcome.
+ </div>
+ <div class=sfc-member>
+ Git is a member of <a href=https://git-scm.com/sfc>Software Freedom Conservancy</a>
+ </div>
+</footer>
+ </div>
