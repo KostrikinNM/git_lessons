@@ -1,6 +1,6 @@
 # git_lessons
 
-<rebrainme.com> - купи себе курс и мучайся там
+<http://rebrainme.com> - купи себе курс и мучайся там
 
 ## GIT 1
 
